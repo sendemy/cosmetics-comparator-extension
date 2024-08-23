@@ -23,13 +23,13 @@
 					</span>
 				</span>
 				<div class="dropdown-content">
-					<p class='dropdown-item'>по убыванию цены</p>
+					<button class='dropdown-item dropdown-item__price-desc'>по убыванию цену</button>
 					<hr>
-					<p class='dropdown-item'>по возрастанию цены</p>
+					<button class='dropdown-item dropdown-item__price-asc'>по возрастанию цену</button>
 					<hr>
-					<p class='dropdown-item'>по рейтингу</p>
+					<button class='dropdown-item dropdown-item__rating-desc'>по рейтингу</button>
 					<hr>
-					<p class='dropdown-item'>по времени доставки</p>
+					<button class='dropdown-item dropdown-item__delivery-time-asc'>по времени доставки</button>
 				</div>
 			</div>
 			<button type="button" class='button-primary'>
@@ -44,14 +44,42 @@
 			</div>
 			<div class='item-content-wrapper'>
 				<div>
-					<p id='item-name'>название</p>
-					<p id='item-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
+					<p class='item-name'>название</p>
+					<p class='item-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
 						provident officiis? Quam, excepturi? Magnam accusantium unde, animi harum doloremque deleniti!
 					</p>
 				</div>
-				<div class='item-price-wrapper'>
-					<p id='item-price'>2599 р</p>
-					<button type="button" class='button-secondary'>купить</button>
+
+				<div class='item-info-wrapper'>
+					<div class='item-rating-delivery-time-wrapper'>
+						<div class='item-rating-wrapper'>
+							<span class='item-rating__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 0L7.34708 4.1459H11.7063L8.17963 6.7082L9.52671 10.8541L6 8.2918L2.47329 10.8541L3.82037 6.7082L0.293661 4.1459H4.65292L6 0Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-rating__number'>4.33</span>
+						</div>
+						<div class='item-delivery-time-wrapper'>
+							<span class='item-delivery-time__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 3.22222V6L7.38889 5.16667M11 6C11 8.76144 8.76144 11 6 11C3.23858 11 1 8.76144 1 6C1 3.23858 3.23858 1 6 1C8.76144 1 11 3.23858 11 6Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-delivery-time__date'>4 дня</span>
+						</div>
+					</div>
+
+					<div class='item-price-wrapper'>
+						<p class='item-price'><span class='item-price__number'>2199</span> р</p>
+						<button type="button" class='button-secondary'>купить</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -62,13 +90,42 @@
 			</div>
 			<div class='item-content-wrapper'>
 				<div>
-					<p id='item-name'>название</p>
-					<p id='item-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, totam.
+					<p class='item-name'>название</p>
+					<p class='item-description'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt,
+						totam.
 					</p>
 				</div>
-				<div class='item-price-wrapper'>
-					<p id='item-price'>2599 р</p>
-					<button type="button" class='button-secondary'>купить</button>
+
+				<div class='item-info-wrapper'>
+					<div class='item-rating-delivery-time-wrapper'>
+						<div class='item-rating-wrapper'>
+							<span class='item-rating__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 0L7.34708 4.1459H11.7063L8.17963 6.7082L9.52671 10.8541L6 8.2918L2.47329 10.8541L3.82037 6.7082L0.293661 4.1459H4.65292L6 0Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-rating__number'>4.83</span>
+						</div>
+						<div class='item-delivery-time-wrapper'>
+							<span class='item-delivery-time__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 3.22222V6L7.38889 5.16667M11 6C11 8.76144 8.76144 11 6 11C3.23858 11 1 8.76144 1 6C1 3.23858 3.23858 1 6 1C8.76144 1 11 3.23858 11 6Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-delivery-time__date'>Завтра</span>
+						</div>
+					</div>
+
+					<div class='item-price-wrapper'>
+						<p class='item-price'><span class='item-price__number'>1799</span> р</p>
+						<button type="button" class='button-secondary'>купить</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -79,13 +136,41 @@
 			</div>
 			<div class='item-content-wrapper'>
 				<div>
-					<p id='item-name'>название</p>
-					<p id='item-description'>Lorem ipsum dolor sit amet.
+					<p class='item-name'>название</p>
+					<p class='item-description'>Lorem ipsum dolor sit amet.
 					</p>
 				</div>
-				<div class='item-price-wrapper'>
-					<p id='item-price'>2599 р</p>
-					<button type="button" class='button-secondary'>купить</button>
+
+				<div class='item-info-wrapper'>
+					<div class='item-rating-delivery-time-wrapper'>
+						<div class='item-rating-wrapper'>
+							<span class='item-rating__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 0L7.34708 4.1459H11.7063L8.17963 6.7082L9.52671 10.8541L6 8.2918L2.47329 10.8541L3.82037 6.7082L0.293661 4.1459H4.65292L6 0Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-rating__number'>4.51</span>
+						</div>
+						<div class='item-delivery-time-wrapper'>
+							<span class='item-delivery-time__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 3.22222V6L7.38889 5.16667M11 6C11 8.76144 8.76144 11 6 11C3.23858 11 1 8.76144 1 6C1 3.23858 3.23858 1 6 1C8.76144 1 11 3.23858 11 6Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-delivery-time__date'>Послезавтра</span>
+						</div>
+					</div>
+
+					<div class='item-price-wrapper'>
+						<p class='item-price'><span class='item-price__number'>2350</span> р</p>
+						<button type="button" class='button-secondary'>купить</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -96,12 +181,40 @@
 			</div>
 			<div class='item-content-wrapper'>
 				<div>
-					<p id='item-name'>название</p>
-					<p id='item-description'>Нет описания</p>
+					<p class='item-name'>название</p>
+					<p class='item-description'>Нет описания</p>
 				</div>
-				<div class='item-price-wrapper'>
-					<p id='item-price'>2599 р</p>
-					<button type="button" class='button-secondary'>купить</button>
+
+				<div class='item-info-wrapper'>
+					<div class='item-rating-delivery-time-wrapper'>
+						<div class='item-rating-wrapper'>
+							<span class='item-rating__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 0L7.34708 4.1459H11.7063L8.17963 6.7082L9.52671 10.8541L6 8.2918L2.47329 10.8541L3.82037 6.7082L0.293661 4.1459H4.65292L6 0Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-rating__number'>4.6</span>
+						</div>
+						<div class='item-delivery-time-wrapper'>
+							<span class='item-delivery-time__image'>
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M6 3.22222V6L7.38889 5.16667M11 6C11 8.76144 8.76144 11 6 11C3.23858 11 1 8.76144 1 6C1 3.23858 3.23858 1 6 1C8.76144 1 11 3.23858 11 6Z"
+										stroke="#8E246C" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span class='item-delivery-time__date'>3 дня</span>
+						</div>
+					</div>
+
+					<div class='item-price-wrapper'>
+						<p class='item-price'><span class='item-price__number'>1599</span> р</p>
+						<button type="button" class='button-secondary'>купить</button>
+					</div>
 				</div>
 			</div>
 		</div>

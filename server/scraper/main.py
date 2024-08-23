@@ -1,16 +1,10 @@
 import requests
+from fake_useragent import UserAgent as ua
 from lxml import html
 
-websites = [
-    'https://www.wildberries.ru/'
-]
-
 res = requests.get(
-    'https://www.wildberries.ru/catalog/21646648/detail.aspx')
-print(res.content[:20])
-# content = res.content.decode("utf-8")
-# tree = html.fromstring(content)
-# element = tree.xpath(
-#     '/html/body/div[1]')
-# print(element)
-# print(content)
+    'https://static-basket-01.wb.ru/vol0/data/'
+    'main-menu-ru-ru-v2.json', headers={'Accept': "*/*",
+                                        'User-Agent': "Chrome/51.0.2704.103 Safari/537.36"})
+
+print(res.content.decode())

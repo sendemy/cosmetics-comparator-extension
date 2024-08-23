@@ -75,20 +75,32 @@ main {
 	flex-grow: 1;
 }
 
+.item-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.item-rating-delivery-time-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 0.7rem;
+	margin-top: 0.5rem;
+}
+
 .item-price-wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	gap: 1rem;
-	margin-top: 0.5rem;
 }
 
-#item-description {
+.item-description {
 	margin-top: 0.3rem;
 }
 
 #title,
-#item-name {
+.item-name {
 	font-size: 1.5rem;
 }
 
@@ -96,12 +108,18 @@ main {
 	font-weight: bold;
 }
 
+button {
+	outline: none;
+	border: none;
+	font-family: 'Comfortaa', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
 .button-primary,
 .button-secondary {
 	background-color: #f1c9e4;
 	color: #8e246c;
-	outline: none;
-	border: none;
 	border-radius: 0.2rem;
 	font-size: 1rem;
 	padding: 0.2rem 0.4rem;
@@ -135,7 +153,7 @@ main {
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 12rem;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
 	border-radius: 0.2rem;
 	z-index: 1;
 }
