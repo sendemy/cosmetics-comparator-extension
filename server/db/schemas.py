@@ -10,3 +10,5 @@ class ItemSchema(Schema):
     url = fields.URL
     price = fields.Integer()
     price_without_sale = fields.Integer()
+    rating = fields.Integer()
+    delivery_time = fields.Date()

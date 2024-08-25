@@ -22,10 +22,10 @@ headers = {
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "cross-site"
 }
-catalog_url = 'https://static-basket-01.wbbasket.ru/vol0/data/main-menu-ru-ru-v3.json'
 
 
 def get_catalogs_wb() -> dict:
+    catalog_url = 'https://static-basket-01.wbbasket.ru/vol0/data/main-menu-ru-ru-v3.json'
     "полный католог товаров WB"
     return requests.get(catalog_url, headers=headers).json()
 

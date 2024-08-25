@@ -1,31 +1,44 @@
 {
-	"name": "test123",
+	"name": "GlamChek",
 	"version": "0.1.0",
-	"description": "test desc",
+	"description": "Расширение для анализа цен на товары косметики с разных сайтов поможет вам быстро и удобно сравнивать стоимость интересующих вас продуктов. Оно собирает информацию о ценах на косметику с популярных интернет-магазинов и предоставляет её в удобном формате.",
 	"permissions": ["storage", "tabs"],
-	"host_permissions": ["https://*.youtube.com/*"],
+	"host_permissions": [
+		"https://*.wildberries.ru/*",
+		"https://*.ozon.ru/*",
+		"https://goldapple.ru/*"
+	],
 	"background": {
 		"service_worker": "background.js"
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://*.youtube.com/*"],
+			"matches": [
+				"https://*.wildberries.ru/*",
+				"https://*.ozon.ru/*",
+				"https://goldapple.ru/*"
+			],
 			"js": ["contentScript.js"]
 		}
 	],
 	"web_accessible_resources": [
 		{
 			"resources": [],
-			"matches": ["https://*.youtube.com/*"]
+			"matches": [
+				"https://*.wildberries.ru/*",
+				"https://*.ozon.ru/*",
+				"https://goldapple.ru/*"
+			]
 		}
 	],
 	"action": {
 		"default_icon": {
 			"16": "assets/ext_icon.png",
 			"24": "assets/ext_icon.png",
-			"32": "assets/ext_icon.png"
+			"32": "assets/ext_icon.png",
+			"36": "assets/ext_icon.png"
 		},
-		"default_title": "test123",
+		"default_title": "GlamChek",
 		"default_popup": "popup.html"
 	},
 	"manifest_version": 3
